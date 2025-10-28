@@ -2,7 +2,6 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 
-
-<t:pageTemplate pageTitle=" Parking Lot">
-    <h1>Welcome to the Parking Lot </h1>
+<t:pageTemplate pageTitle=" About Parking Lot">
+    <h1>About Parking Lot </h1>
 </t:pageTemplate>
