@@ -1,5 +1,5 @@
-<header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<header data-bs-theme="blue">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="${pageContext.request.contextPath}">Parking Lot</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -11,6 +11,9 @@
                     <a class="nav-link
                    ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/"))
 eq '/about.jsp' ? ' active' : ''}" aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About</a>
+                    <a class="nav-link
+                   ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/"))
+eq '/cars.jsp' ? ' active' : ''}" aria-current="page" href="${pageContext.request.contextPath}/cars.jsp">Cars</a>
                     <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                     <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
                 </ul>
