@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "Cars", value = "/Cars")
@@ -28,5 +29,21 @@ public class Cars extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // DELETE: obține array-ul de ID-uri selectate
+        String[] carIdsArray = request.getParameterValues("car_ids");
+
+        if (carIdsArray != null && carIdsArray.length > 0) {
+            // Convertește String[] la List<Long>
+            List<Long> carIds = new ArrayList<>();
+            for (String id : carIdsArray) {
+                carIds.add(Long.valueOf(id));
+            }
+
+            // Șterge mașinile
+            carsBean.deleteCarsByIds(carIds);
+        }
+
+        // Redirect înapoi la pagina Cars
+        response.sendRedirect(request.getContextPath() + "/Cars");
     }
 }
