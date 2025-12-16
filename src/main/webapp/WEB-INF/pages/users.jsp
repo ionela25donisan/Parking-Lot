@@ -1,16 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Users - Parking Lot</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<%@include file="menu.jsp"%>
 
-<!-- Main content cu padding pentru că navbar e fixed -->
-<main style="padding-top: 80px; min-height: calc(100vh - 200px);">
+<t:pageTemplate pageTitle="Users - Parking Lot">
   <div class="container py-4">
     <h1 class="mb-4">Users Management</h1>
 
@@ -52,10 +44,4 @@
       </div>
     </div>
   </div>
-</main>
-
-<%@include file="footer.jsp"%>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+</t:pageTemplate>
