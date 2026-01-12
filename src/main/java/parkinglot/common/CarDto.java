@@ -15,6 +15,9 @@ public class CarDto {
         this.ownerId = ownerId;
     }
 
+    public CarDto(Long id, String licensePlate, String parkingSpot, String username) {
+    }
+
     public Long getId() {
         return id;
     }
