@@ -1,4 +1,4 @@
-<footer class="bg-dark text-light text-center py-3 mt-auto">
+<footer class="bg-secondary text-light text-center py-3 mt-auto">
   <div class="container">
     <p class="mb-0">&copy; 2025 Parking Lot. All rights reserved.</p>
     <p class="mb-0">

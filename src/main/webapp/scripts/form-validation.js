@@ -1,11 +1,11 @@
-// form-validation.js
+// Wrapped in an IIFE (Immediately Invoked Function Expression)
 (function () {
     'use strict'
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
 
-    // Loop over them and prevent submission
+    // Loop over them and prevent submission if invalid
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
