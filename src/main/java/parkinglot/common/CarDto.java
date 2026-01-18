@@ -5,17 +5,12 @@ public class CarDto {
     private String licensePlate;
     private String parkingSpot;
     private String ownerName;
-    private Long ownerId;
 
-    public CarDto(Long id, String licensePlate, String parkingSpot, String ownerName, Long ownerId) {
+    public CarDto(Long id, String licensePlate, String parkingSpot, String ownerName) {
         this.id = id;
         this.licensePlate = licensePlate;
         this.parkingSpot = parkingSpot;
         this.ownerName = ownerName;
-        this.ownerId = ownerId;
-    }
-
-    public CarDto(Long id, String licensePlate, String parkingSpot, String username) {
     }
 
     public Long getId() {
@@ -32,9 +27,5 @@ public class CarDto {
 
     public String getOwnerName() {
         return ownerName;
-    }
-
-    public Long getOwnerId() {
-        return ownerId;
     }
 }

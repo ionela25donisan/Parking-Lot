@@ -1,4 +1,3 @@
-
 package parkinglot.rest;
 
 import jakarta.annotation.security.RolesAllowed;

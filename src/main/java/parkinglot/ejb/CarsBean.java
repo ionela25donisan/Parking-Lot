@@ -1,4 +1,3 @@
-
 package parkinglot.ejb;
 
 import jakarta.ejb.EJBException;
