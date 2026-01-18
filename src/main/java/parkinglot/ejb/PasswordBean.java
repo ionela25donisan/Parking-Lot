@@ -1,3 +1,4 @@
+
 package parkinglot.ejb;
 
 import jakarta.ejb.Stateless;
