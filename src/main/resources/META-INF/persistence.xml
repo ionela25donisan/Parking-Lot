@@ -11,8 +11,7 @@
         <class>parkinglot.entities.Car</class>
 
         <properties>
-            <property name="jakarta.persistence.schema-generation.database.action"
-                      value="create-or-extend-tables"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
         </properties>
     </persistence-unit>
 </persistence>
